@@ -20,7 +20,7 @@ const technicalSkills = [
   {
     category: "Database",
     icon: <Database className="h-6 w-6" />,
-    skills: ["MongoDB", "SQL"],
+    skills: ["MongoDB", "MySQL"],
     color: "bg-gradient-to-r from-orange-500 to-amber-500",
   },
   {
@@ -32,7 +32,7 @@ const technicalSkills = [
   {
     category: "Data Science",
     icon: <BarChart className="h-6 w-6" />,
-    skills: ["Pandas", "NumPy", "Data Analysis"],
+    skills: ["Pandas", "NumPy", "Data Analysis","Pipelines", "Data Visualization"],
     color: "bg-gradient-to-r from-red-500 to-pink-500",
   },
 ]

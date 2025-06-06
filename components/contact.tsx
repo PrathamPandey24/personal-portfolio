@@ -63,7 +63,7 @@ export default function Contact() {
               <div>
                 <div className="text-sm text-neutral-500">Blog</div>
                 <a
-                  href="https://prathampandey.blog.com"
+                  href="https://my-blog-cli.vercel.app/"
                   className="text-neutral-800 hover:text-red-600 transition-colors"
                 >
                   MyBlog
