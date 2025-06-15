@@ -14,7 +14,7 @@ const projectCategories = {
       technologies: "Django, HTML, CSS",
       image: "metly.png?height=600&width=800",
       github: "https://github.com/PrathamPandey24/Meetly",
-      demo: "https://meetly-demo.vercel.app",
+      demo: null,
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const projectCategories = {
       technologies: "Django, HTML, CSS",
       image: "myblog.png?height=600&width=800 border-radius-2xl",
       github: "https://github.com/PrathamPandey24/My_Blog",
-      demo: "https://myblog-demo.vercel.app",
+      demo: "https://my-blog-cli.vercel.app/",
     },
     {
       id: 3,
@@ -34,58 +34,32 @@ const projectCategories = {
       technologies: "Next.js, Tailwind CSS, React",
       image: "portfolio.png?height=600&width=800",
       github: "https://github.com/prathampandey/portfolio",
-      demo: "https://pratham-pandey.vercel.app",
+      demo: null,
     },
   ],
   python: [
-    {
-      id: 4,
-      title: "Data Analysis Tool",
-      description:
-        "Python tool for analyzing and visualizing large datasets. Helps extract meaningful insights from complex data.",
-      technologies: "Python, Pandas, NumPy",
-      image: "anlysis.png?height=600&width=800",
-      github: "https://github.com/prathampandey/data-analysis",
-      demo: null,
-    },
+  
     {
       id: 5,
       title: "A-Star path finding ",
       description: "A* pathfinding algorithm visualizer. Helps visualize the pathfinding process in a grid-based environment",
       technologies: "Python, Tkinter, A* Algorithm",
       image: "astar.png?height=600&width=800",
-      github: "https://github.com/prathampandey/automation",
+      github: "https://github.com/PrathamPandey24/A-star-game",
       demo: null,
     },
   ],
   ml: [
     {
-      id: 7,
-      title: "Image Classification",
-      description: "Deep learning model for classifying images using Convolutional Neural Networks (CNN).",
-      technologies: "Python, TensorFlow, CNN",
-      image: "classification.png?height=600&width=800",
-      github: "https://github.com/prathampandey/image-classification",
-      demo: null,
-    },
-    {
-      id: 8,
-      title: "Sentiment Analysis",
-      description: "NLP model for analyzing sentiment in text data using natural language processing techniques.",
-      technologies: "Python, NLTK, Scikit-learn",
-      image: "sentiment.png?height=600&width=800",
-      github: "https://github.com/prathampandey/sentiment-analysis",
-      demo: "https://sentiment.yourdomain.com",
-    },
-    {
       id: 9,
-      title: "Predictive Analytics",
-      description: "Machine learning model for predicting future trends based on historical data patterns.",
+      title: "Stock Price Prediction",
+      description:
+        "Machine learning model for predicting stock prices using historical data and regression techniques.",
       technologies: "Python, Scikit-learn, Pandas",
-      image: "predicitve.png?height=600&width=800",
-      github: "https://github.com/prathampandey/predictive-analytics",
-      demo: null,
-    },
+      image: "\stock.png?height=600&width=800",
+      github: "https://colab.research.google.com/drive/1gfyDf2Siwvpr__9SmK3NN_07C21zjZT_?usp=sharing",
+      demo: null, },
+
   ],
   ds: [
     {
@@ -94,19 +68,19 @@ const projectCategories = {
       description:
         "An interactive dashboard for visualizing complex datasets using charts and graphs.",
       technologies: "Python, Matplotlib, Plotly",
-      image: "dataviz.png?height=600&width=800",
+      image: "dvd.png?height=600&width=800",
       github: "https://github.com/prathampandey/data-visualization",
       demo: null,
     },
     {
       id: 11,
-      title: "Big Data Analysis",
+      title: "Zomato Data Analysis",
       description:
-        "A project for processing and analyzing large-scale datasets using distributed computing.",
-      technologies: "Python, Hadoop, Spark",
-      image: "bigdata.png?height=600&width=800",
-      github: "https://github.com/prathampandey/big-data-analysis",
+        "A project for processing and analyzing large-scale datasets for ZOmato",
+      technologies: "Python, Matlplotlib, Pandas",
+      github: "https://colab.research.google.com/drive/1Kf1GUPgRHblvvfWdh14aWKFarwgX3AyP?usp=sharing",
       demo: null,
+      image: "zomato.png?height=600&width=800",
     },
   ],
 }
@@ -124,7 +98,12 @@ export default function Projects() {
 
   const getFilteredProjects = () => {
     if (activeCategory === "all") {
-      return [...projectCategories.webdev, ...projectCategories.python, ...projectCategories.ml]
+      return [
+        ...projectCategories.webdev,
+        ...projectCategories.python,
+        ...projectCategories.ml,
+        ...projectCategories.ds,
+      ]
     }
     return projectCategories[activeCategory as keyof typeof projectCategories] || []
   }
