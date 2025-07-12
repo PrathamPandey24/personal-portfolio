@@ -57,29 +57,40 @@ const projectCategories = {
         "Machine learning model for predicting stock prices using historical data and regression techniques.",
       technologies: "Python, Scikit-learn, Pandas",
       image: "\stock.png?height=600&width=800",
-      github: "https://colab.research.google.com/drive/1gfyDf2Siwvpr__9SmK3NN_07C21zjZT_?usp=sharing"},
+      github: "https://colab.research.google.com/drive/1gfyDf2Siwvpr__9SmK3NN_07C21zjZT_?usp=sharing",
+      demo: null, },
 
   ],
   ds: [
-    {
-      id: 10,
-      title: "Data Visualization Dashboard",
-      description:
-        "An interactive dashboard for visualizing complex datasets using charts and graphs.",
-      technologies: "Python, Matplotlib, Plotly",
-      image: "dvd.png?height=600&width=800",
-      github: "https://github.com/prathampandey/data-visualization",
-      demo: null,
-    },
     {
       id: 11,
       title: "Zomato Data Analysis",
       description:
         "A project for processing and analyzing large-scale datasets for ZOmato",
       technologies: "Python, Matlplotlib, Pandas",
-      image: "zomato.png?height=600&width=800",
       github: "https://colab.research.google.com/drive/1Kf1GUPgRHblvvfWdh14aWKFarwgX3AyP?usp=sharing",
       demo: null,
+      image: "zomato.png?height=600&width=800",
+    },
+        {
+      id: 13,
+      title: "Hospitalilty Management Sysytem",
+      description:
+        "Built an end-to-end analytics dashboard using Power BI, SQL, and Excel to uncover regional performance, customer trends, and operational insights for hotel chains.",
+      technologies: "Python, PowerBI, Pandas, Excel",
+      github: "https://github.com/PrathamPandey24/hospitality-domain-dashboard",
+      demo: null,
+      image: "hospitality.png?height=600&width=800",
+    },
+        {
+      id: 14,
+      title: "Cricket Analytics Dashboard",
+      description:
+        "A Dashboard for analyzing T20 world cup best playing XI",
+      technologies: "Python, PowerBI, Pandas, Excel",
+      github: "https://github.com/PrathamPandey24/T20wcBestPlayingXI",
+      demo: null,
+      image: "playing 11.jpeg?height=600&width=800",
     },
   ],
 }
@@ -97,7 +108,12 @@ export default function Projects() {
 
   const getFilteredProjects = () => {
     if (activeCategory === "all") {
-      return [...projectCategories.webdev, ...projectCategories.python, ...projectCategories.ml]
+      return [
+        ...projectCategories.webdev,
+        ...projectCategories.python,
+        ...projectCategories.ml,
+        ...projectCategories.ds,
+      ]
     }
     return projectCategories[activeCategory as keyof typeof projectCategories] || []
   }
