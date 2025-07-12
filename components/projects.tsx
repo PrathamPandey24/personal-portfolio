@@ -63,6 +63,17 @@ const projectCategories = {
   ],
   ds: [
     {
+      id: 10,
+      title: "Data Visualization Dashboard",
+      description:
+        "An interactive dashboard for visualizing complex datasets using charts and graphs.",
+      technologies: "Python, Matplotlib, Plotly",
+      image: "dvd.png?height=600&width=800",
+      github: "https://github.com/prathampandey/data-visualization",
+      demo: null,
+    },
+    {
+
       id: 11,
       title: "Zomato Data Analysis",
       description:
@@ -91,8 +102,8 @@ const projectCategories = {
       github: "https://github.com/PrathamPandey24/T20wcBestPlayingXI",
       demo: null,
       image: "playing 11.jpeg?height=600&width=800",
-    },
-  ],
+}
+],
 }
 
 const categories = [
