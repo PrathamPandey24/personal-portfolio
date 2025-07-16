@@ -8,7 +8,7 @@ const technicalSkills = [
   {
     category: "Frontend",
     icon: <Globe className="h-6 w-6" />,
-    skills: ["HTML", "CSS", "JavaScript"],
+    skills: ["HTML", "CSS",],
     color: "bg-gradient-to-r from-blue-500 to-cyan-500",
   },
   {
@@ -26,13 +26,19 @@ const technicalSkills = [
   {
     category: "Programming",
     icon: <Cpu className="h-6 w-6" />,
-    skills: ["C++", "Python"],
+    skills: ["Python","SQL" ],
     color: "bg-gradient-to-r from-purple-500 to-violet-500",
   },
   {
     category: "Data Science",
     icon: <BarChart className="h-6 w-6" />,
-    skills: ["Pandas", "NumPy", "Data Analysis","Pipelines", "Data Visualization"],
+    skills: ["PowerBI","Tableau","Excel","Pandas", "NumPy", "Data Analysis","Pipelines", "Data Visualization"],
+    color: "bg-gradient-to-r from-red-500 to-pink-500",
+  },
+  {
+    category: "Business Analyst",
+    icon: <BarChart className="h-6 w-6" />,
+    skills: ["Data storytelling", "KPI design", "Stakeholder reporting"],
     color: "bg-gradient-to-r from-red-500 to-pink-500",
   },
 ]
