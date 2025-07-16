@@ -32,7 +32,7 @@ const technicalSkills = [
   {
     category: "Data Science",
     icon: <BarChart className="h-6 w-6" />,
-    skills: ["PowerBI","Tableau","Excel","Pandas", "NumPy", "Data Analysis","Pipelines", "Data Visualization"],
+    skills: ["PowerBI", "Tableau","Excel","Pandas", "NumPy", "Data Analysis","Pipelines", "Data Visualization"],
     color: "bg-gradient-to-r from-red-500 to-pink-500",
   },
   {
