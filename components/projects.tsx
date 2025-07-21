@@ -101,7 +101,7 @@ const projectCategories = {
       technologies: "Excel",
       github: "https://github.com/PrathamPandey24/Customer-Centre-Analysis",
       demo: null,
-      image: "Customer.png?height=600&width=800",
+      image: "customer.png?height=600&width=800",
 }
 ],
 }
