@@ -92,6 +92,16 @@ const projectCategories = {
       github: "https://github.com/PrathamPandey24/T20wcBestPlayingXI",
       demo: null,
       image: "playing 11.jpeg?height=600&width=800",
+},
+        {
+      id: 15,
+      title: "Customer Centre Analytics",
+      description:
+        "A Dashboard for analyzing T20 world cup best playing XI",
+      technologies: "Excel",
+      github: "https://github.com/PrathamPandey24/Customer-Centre-Analysis",
+      demo: null,
+      image: "Customer.png?height=600&width=800",
 }
 ],
 }
